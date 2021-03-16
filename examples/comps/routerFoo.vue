@@ -1,0 +1,138 @@
+/*
+ * @Author: zhaoye 
+ * @Date: 2017-01-18 22:32:04 
+ * @Last Modified by:   zhaoye 
+ * @Last Modified time: 2017-01-18 22:32:04 
+ */
+<template>
+    <page>
+        <div>
+            <div>
+                aaa
+            </div>
+            <router-link to="/foo/bar" >bar</router-link>
+            <div>
+                aaa
+            </div>
+            <div>
+                aaa
+            </div>
+            <div>
+                aaa
+            </div>
+            <div>
+                aaa
+            </div>
+            <div>
+                aaa
+            </div>
+            <div>
+                aaa
+            </div>
+            <div>
+                aaa
+            </div>
+            <div>
+                aaa
+            </div>
+            <div>
+                aaa
+            </div>
+            <div>
+                aaa
+            </div>
+            <div>
+                aaa
+            </div>
+            <div>
+                aaa
+            </div>
+            <div>
+                aaa
+            </div>
+            <div>
+                aaa
+            </div>
+            <div>
+                aaa
+            </div>
+            <div>
+                aaa
+            </div>
+            <div>
+                aaa
+            </div>
+            <div>
+                aaa
+            </div>
+            <div>
+                aaa
+            </div>
+            <div>
+                aaa
+            </div>
+            <div>
+                aaa
+            </div>
+            <div>
+                aaa
+            </div>
+            <div>
+                aaa
+            </div>
+            <div>
+                aaa
+            </div>
+            <div>
+                aaa
+            </div>
+            <div>
+                aaa
+            </div>
+            <div>
+                aaa
+            </div>
+            <div>
+                aaa
+            </div>
+            <div>
+                aaa
+            </div>
+            <div>
+                aaa
+            </div>
+            <div>
+                aaa
+            </div>
+            <div>
+                aaa
+            </div>
+            <div>
+                aaa
+            </div>
+            <div>
+                aaa
+            </div>
+            <div>
+                aaa
+            </div>
+            <div>
+                aaa
+            </div>
+        </div>
+    </page>
+</template>
+<script>
+    import {Page} from '../index.js';
+    export default {
+        components: {
+            page: Page
+        }
+    }
+</script>
+<style >
+    .page{
+        width: 100%;
+        text-align: center;
+    }
+</style>

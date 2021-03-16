@@ -1,0 +1,96 @@
+
+@import '../less/var.less';
+@import '../less/layout.less';
+@close-btn-width: .7rem;
+@title-font-size: .4rem;
+.alert {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: @z-max+100;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0,0,0,0.4);
+    .flexbox();
+    .flexbox.center();
+    .window {
+        width: 5.4rem;
+        background-color: @white;
+        font-size:0.3rem;
+        border-radius: 0.2rem;
+        overflow: hidden;
+        .title {
+            padding: @title-font-size/2 0;
+            font-size: @title-font-size;
+            text-align: center;
+            line-height: @title-font-size * 1.3;
+            color: @gray-dark;
+            .flexbox();
+            .text {
+                &.fix-position {
+                    padding-left: @close-btn-width;
+                }
+                .flexitem(1);
+            }
+        }
+        .close {
+            color: @gray-dark;
+            background-color: @white;
+            .flexbox();
+            .flexbox.vertical();
+            .blocker {
+                .flexitem(1);
+                display: block;
+                content: ' ';
+                height: 100%;
+                width: 100%;
+                -webkit-box-flex: 1;
+            }
+            i {
+                background-image: url('./close_icon.png');
+                background-repeat: no-repeat;
+                background-position: center 40%;
+                background-size: @title-font-size/1.5 @title-font-size/1.5;
+                display: block;
+                width: @close-btn-width;
+                height: @close-btn-width;
+            }
+        }
+        .content {
+            text-align: center;
+            font-size: .32rem;
+            padding: .4rem;
+            color: @gray-dark;
+        }
+        .title + .content {
+            padding-top: 0;
+        }
+        .btn-container {
+            .flexbox();
+            .btn {
+                .flexitem(1);
+                height: .88rem;
+                font-size: .32rem;
+                background-color: @white;
+                color: @gray-dark;
+                line-height: .88rem;
+                text-align:center;
+                border: none;
+                border-radius: 0;
+                border-top: @border-nm;
+                &:first-child:not(:only-child) {
+                    border-right: @border-nm;
+                }
+            }
+            .btnOk{
+                background: #ff5c5c;
+                border-radius: 0 0 .2rem 0;
+                color:#fff
+            }
+            .btnCan{
+                border-radius: 0 0 0 .2rem;
+                
+            }
+        }
+    }
+}
